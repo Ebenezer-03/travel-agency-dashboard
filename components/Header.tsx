@@ -10,7 +10,7 @@ const Header = ({title,description}: Props) => {
     const location = useLocation();
   return (
     <header className='header'>
-        <article>
+        <article className='w-full text-center'>
             <h1 className={cn('text-dark-100',
                 location.pathname === '/' ? 'text-2xl md:text-4xl font-bold'
                 : 'text-xl md:text-2xl font-semibold'

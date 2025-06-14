@@ -77,11 +77,11 @@
   }
 
   .stats-card {
-    @apply p-6 flex flex-col gap-6 bg-white shadow-400 rounded-20 text-dark-100;
+    @apply p-6 flex flex-col gap-6 bg-white shadow-400 rounded-20 text-dark-100 overflow-hidden;
 
-    .content {
-      @apply flex flex-row md:flex-col-reverse xl:flex-row xl:items-center gap-3 justify-between;
-    }
+    /* .content {
+      @apply flex flex-row gap-3;
+    } */
   }
 
   .sign-in-card {
@@ -356,7 +356,8 @@
   }
 
   .admin-layout {
-    @apply flex flex-col lg:flex-row h-screen w-full;
+    @apply flex flex-col h-screen w-full lg:grid lg:grid-cols-[270px_1fr];
+
     .children {
       @apply w-full h-full bg-light-200 pt-12 lg:pt-10;
     }
