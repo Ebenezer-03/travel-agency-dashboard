@@ -188,7 +188,7 @@ export const allTrips = [
   estimatedPrice: "$4,000",
 },
 ];
-const users = [
+export const users = [
   {
     id: 1,
     name: "John Doe",
