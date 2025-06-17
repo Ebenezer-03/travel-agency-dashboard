@@ -1,4 +1,4 @@
-import {Account, Client, Databases} from "appwrite"
+import {Account, Client, Databases, Storage} from "appwrite"
 
 export const appwriteConfig = {
     endpointUrl:import.meta.env.VITE_APPWRITE_API_ENPOINT,
@@ -15,6 +15,6 @@ const client = new Client()
 
 const account = new Account(client)
 const database = new Databases(client);
-const storage = new Storage();
+const storage = new Storage(client);
 
 export{client,account,database,storage};
