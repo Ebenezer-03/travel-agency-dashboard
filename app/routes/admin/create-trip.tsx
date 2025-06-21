@@ -23,7 +23,7 @@ export function meta() {
 }
 
 export async function loader() {
-  const response = await fetch("https://restcountries.com/v3.1/all?fields=name,latlng,flag,maps");
+  const response = await fetch('https://restcountries.com/v3.1/all?fields=name,latlng,flag,maps');
   const data = await response.json();
 
   return data.map((country: any) => ({
