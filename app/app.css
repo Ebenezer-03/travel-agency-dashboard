@@ -259,7 +259,7 @@
     }
   }
   .trip-card {
-    @apply shadow-300 bg-white rounded-[20px] flex-col w-full relative;
+    @apply shadow-300 bg-white rounded-[20px] flex-col w-full relative !h-[full];
     img {
       @apply w-full h-[160px] rounded-t-xl object-cover aspect-video;
     }
