@@ -12,7 +12,10 @@ FROM node:20-alpine AS build-env
 COPY . /app/
 COPY --from=development-dependencies-env /app/node_modules /app/node_modules
 WORKDIR /app
+RUN npm install
 RUN npm run build
+COPY .env.local .env.local
+
 
 FROM node:20-alpine
 COPY ./package.json package-lock.json /app/
